@@ -1,0 +1,5 @@
+﻿Diagnóstico,Grupo Etário,Total_Atendimentos,Casos,Prevalência (%),P_Value
+Hipertensão,Menos de 45 anos,22038,2483,11.27,0.0
+Diabetes,Menos de 45 anos,22038,1014,4.6,0.0
+Hipertensão,45 anos ou mais,7106,2835,39.9,0.0
+Diabetes,45 anos ou mais,7106,1354,19.05,0.0

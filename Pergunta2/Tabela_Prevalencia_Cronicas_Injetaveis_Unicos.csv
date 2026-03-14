@@ -1,0 +1,5 @@
+﻿Comorbidade,Grupo,Total_Pacientes_Grupo,Casos_Diagnostico,Prevalencia_%,P_Value
+Hipertensão,Sim (UDVI),15099,2838,18.8,0.0
+Diabetes,Sim (UDVI),15099,1156,7.66,0.4352
+Hipertensão,Não (Geral),7187,1046,14.55,0.0
+Diabetes,Não (Geral),7187,529,7.36,0.4352

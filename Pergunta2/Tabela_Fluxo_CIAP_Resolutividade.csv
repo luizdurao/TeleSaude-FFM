@@ -1,0 +1,99 @@
+﻿CIAP_Plot,Status_Resolutividade,Destino_Plot,Quantidade_Atendimentos
+Outros CIAPs (Agrupados),Resolvido na APS,Sem Encaminhamento (Resolvido),12285
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Resolvido na APS,Sem Encaminhamento (Resolvido),1507
+P01-SENSAÇÃO DE ANSIEDADE/NERVOSISMO/TEN...,Resolvido na APS,Sem Encaminhamento (Resolvido),1170
+R05-TOSSE,Resolvido na APS,Sem Encaminhamento (Resolvido),864
+P06-PERTURBAÇÃO DO SONO,Resolvido na APS,Sem Encaminhamento (Resolvido),826
+S02-PRURIDO,Resolvido na APS,Sem Encaminhamento (Resolvido),559
+S10-FURÚNCULO/CARBÚNCULO,Resolvido na APS,Sem Encaminhamento (Resolvido),521
+L03-SINAIS/SINTOMAS DA REGIÃO LOMBAR,Resolvido na APS,Sem Encaminhamento (Resolvido),501
+R96-ASMA,Resolvido na APS,Sem Encaminhamento (Resolvido),477
+P74-DISTÚRBIO ANSIOSO/ESTADO DE ANSIEDAD...,Resolvido na APS,Sem Encaminhamento (Resolvido),412
+P19-ABUSO DE DROGAS,Resolvido na APS,Sem Encaminhamento (Resolvido),398
+Outros CIAPs (Agrupados),Encaminhado,Oftalmologia,402
+Outros CIAPs (Agrupados),Encaminhado,Outras Especialidades,320
+Outros CIAPs (Agrupados),Encaminhado,Ortopedia,236
+Outros CIAPs (Agrupados),Encaminhado,Cirurgia Geral,197
+Outros CIAPs (Agrupados),Encaminhado,Dermatologia,94
+Outros CIAPs (Agrupados),Encaminhado,Urologia,87
+Outros CIAPs (Agrupados),Encaminhado,Múltiplos Encaminhamentos,85
+Outros CIAPs (Agrupados),Encaminhado,Psiquiatria,82
+Outros CIAPs (Agrupados),Encaminhado,Otorrinolaringologia,67
+Outros CIAPs (Agrupados),Encaminhado,Infectologia,59
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Encaminhado,Oftalmologia,30
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Encaminhado,Outras Especialidades,20
+P01-SENSAÇÃO DE ANSIEDADE/NERVOSISMO/TEN...,Encaminhado,Oftalmologia,12
+P01-SENSAÇÃO DE ANSIEDADE/NERVOSISMO/TEN...,Encaminhado,Outras Especialidades,12
+P01-SENSAÇÃO DE ANSIEDADE/NERVOSISMO/TEN...,Encaminhado,Psiquiatria,12
+L03-SINAIS/SINTOMAS DA REGIÃO LOMBAR,Encaminhado,Ortopedia,10
+P06-PERTURBAÇÃO DO SONO,Encaminhado,Oftalmologia,10
+P19-ABUSO DE DROGAS,Encaminhado,Ortopedia,9
+P19-ABUSO DE DROGAS,Encaminhado,Psiquiatria,9
+P74-DISTÚRBIO ANSIOSO/ESTADO DE ANSIEDAD...,Encaminhado,Psiquiatria,9
+P06-PERTURBAÇÃO DO SONO,Encaminhado,Psiquiatria,8
+L03-SINAIS/SINTOMAS DA REGIÃO LOMBAR,Encaminhado,Outras Especialidades,7
+R05-TOSSE,Encaminhado,Infectologia,6
+R96-ASMA,Encaminhado,Oftalmologia,6
+S02-PRURIDO,Encaminhado,Dermatologia,6
+S10-FURÚNCULO/CARBÚNCULO,Encaminhado,Cirurgia Geral,6
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Encaminhado,Ortopedia,5
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Encaminhado,Urologia,5
+L03-SINAIS/SINTOMAS DA REGIÃO LOMBAR,Encaminhado,Oftalmologia,5
+P19-ABUSO DE DROGAS,Encaminhado,Cirurgia Geral,5
+R96-ASMA,Encaminhado,Ortopedia,5
+S02-PRURIDO,Encaminhado,Oftalmologia,5
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Encaminhado,Cirurgia Geral,4
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Encaminhado,Dermatologia,4
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Encaminhado,Psiquiatria,4
+P01-SENSAÇÃO DE ANSIEDADE/NERVOSISMO/TEN...,Encaminhado,Ortopedia,4
+P01-SENSAÇÃO DE ANSIEDADE/NERVOSISMO/TEN...,Encaminhado,Otorrinolaringologia,4
+P06-PERTURBAÇÃO DO SONO,Encaminhado,Ortopedia,4
+P19-ABUSO DE DROGAS,Encaminhado,Oftalmologia,4
+R05-TOSSE,Encaminhado,Oftalmologia,4
+S02-PRURIDO,Encaminhado,Cirurgia Geral,4
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Encaminhado,Múltiplos Encaminhamentos,3
+L03-SINAIS/SINTOMAS DA REGIÃO LOMBAR,Encaminhado,Otorrinolaringologia,3
+L03-SINAIS/SINTOMAS DA REGIÃO LOMBAR,Encaminhado,Urologia,3
+P01-SENSAÇÃO DE ANSIEDADE/NERVOSISMO/TEN...,Encaminhado,Dermatologia,3
+P01-SENSAÇÃO DE ANSIEDADE/NERVOSISMO/TEN...,Encaminhado,Infectologia,3
+P06-PERTURBAÇÃO DO SONO,Encaminhado,Otorrinolaringologia,3
+P06-PERTURBAÇÃO DO SONO,Encaminhado,Outras Especialidades,3
+P74-DISTÚRBIO ANSIOSO/ESTADO DE ANSIEDAD...,Encaminhado,Oftalmologia,3
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Encaminhado,Otorrinolaringologia,2
+L03-SINAIS/SINTOMAS DA REGIÃO LOMBAR,Encaminhado,Múltiplos Encaminhamentos,2
+P01-SENSAÇÃO DE ANSIEDADE/NERVOSISMO/TEN...,Encaminhado,Cirurgia Geral,2
+P06-PERTURBAÇÃO DO SONO,Encaminhado,Cirurgia Geral,2
+P06-PERTURBAÇÃO DO SONO,Encaminhado,Dermatologia,2
+P06-PERTURBAÇÃO DO SONO,Encaminhado,Infectologia,2
+P74-DISTÚRBIO ANSIOSO/ESTADO DE ANSIEDAD...,Encaminhado,Outras Especialidades,2
+R05-TOSSE,Encaminhado,Cirurgia Geral,2
+R05-TOSSE,Encaminhado,Ortopedia,2
+R05-TOSSE,Encaminhado,Otorrinolaringologia,2
+R96-ASMA,Encaminhado,Dermatologia,2
+R96-ASMA,Encaminhado,Outras Especialidades,2
+S02-PRURIDO,Encaminhado,Infectologia,2
+S02-PRURIDO,Encaminhado,Outras Especialidades,2
+S02-PRURIDO,Encaminhado,Urologia,2
+S10-FURÚNCULO/CARBÚNCULO,Encaminhado,Dermatologia,2
+S10-FURÚNCULO/CARBÚNCULO,Encaminhado,Ortopedia,2
+S10-FURÚNCULO/CARBÚNCULO,Encaminhado,Outras Especialidades,2
+K86-HIPERTENSÃO SEM COMPLICAÇÕES,Encaminhado,Infectologia,1
+L03-SINAIS/SINTOMAS DA REGIÃO LOMBAR,Encaminhado,Cirurgia Geral,1
+L03-SINAIS/SINTOMAS DA REGIÃO LOMBAR,Encaminhado,Infectologia,1
+P01-SENSAÇÃO DE ANSIEDADE/NERVOSISMO/TEN...,Encaminhado,Múltiplos Encaminhamentos,1
+P06-PERTURBAÇÃO DO SONO,Encaminhado,Múltiplos Encaminhamentos,1
+P06-PERTURBAÇÃO DO SONO,Encaminhado,Urologia,1
+P19-ABUSO DE DROGAS,Encaminhado,Dermatologia,1
+P19-ABUSO DE DROGAS,Encaminhado,Infectologia,1
+P19-ABUSO DE DROGAS,Encaminhado,Outras Especialidades,1
+P74-DISTÚRBIO ANSIOSO/ESTADO DE ANSIEDAD...,Encaminhado,Ortopedia,1
+R05-TOSSE,Encaminhado,Dermatologia,1
+R05-TOSSE,Encaminhado,Múltiplos Encaminhamentos,1
+R05-TOSSE,Encaminhado,Outras Especialidades,1
+R96-ASMA,Encaminhado,Infectologia,1
+R96-ASMA,Encaminhado,Múltiplos Encaminhamentos,1
+R96-ASMA,Encaminhado,Psiquiatria,1
+S02-PRURIDO,Encaminhado,Ortopedia,1
+S02-PRURIDO,Encaminhado,Otorrinolaringologia,1
+S10-FURÚNCULO/CARBÚNCULO,Encaminhado,Oftalmologia,1
+S10-FURÚNCULO/CARBÚNCULO,Encaminhado,Otorrinolaringologia,1

@@ -1,0 +1,53 @@
+﻿Record ID Str,CIAP_Plot,Desfecho_Agrupado_IA,Volume de Consultas
+Paciente ID: f0c670190c398a282a9e827a16d7ec15,N88-EPILEPSIA,[De + Dias + Prescrevo],5
+Paciente ID: 55d8b233471d1ad00ade225364e296af,CIAP Não Informado,[De + Dias + Prescrevo],3
+Paciente ID: 8d6723c93fe64d014950a08f0d5f56eb,CIAP Não Informado,[De + Dias + Prescrevo],3
+Paciente ID: bc6152f0469abc13d19b5436fe99bc83,T89-DIABETES INSULINO-DEPENDENTE,[De + Dias + Prescrevo],3
+Paciente ID: e7643fc988e575f0ecb93f2acd7bd708,K94-FLEBITE/TROMBOFLEBITE,[De + Dias + Prescrevo],3
+Paciente ID: e7643fc988e575f0ecb93f2acd7bd708,K94-FLEBITE/TROMBOFLEBITE,[Solicito + Exames + De],3
+Paciente ID: 002e02af64ba091ac6195afdf9de97fa,CIAP Não Informado,[De + Dias + Prescrevo],2
+Paciente ID: 002e02af64ba091ac6195afdf9de97fa,CIAP Não Informado,[Solicito + Exames + De],2
+Paciente ID: 066e15e3956c7c54b87be41a5f7d42e2,CIAP Não Informado,[De + Dias + Prescrevo],2
+Paciente ID: 55d8b233471d1ad00ade225364e296af,CIAP Não Informado,[Solicito + Exames + De],2
+Paciente ID: bc6152f0469abc13d19b5436fe99bc83,T90-DIABETES NÃO INSULINO-DEPENDENTE,[De + Dias + Prescrevo],2
+Paciente ID: e0df43fbeac7271f0f3b4cfaf4ac2cfb,A70-TUBERCULOSE,[Solicito + Exames + De],2
+Paciente ID: f0c670190c398a282a9e827a16d7ec15,CIAP Não Informado,[De + Dias + Prescrevo],2
+Paciente ID: 002e02af64ba091ac6195afdf9de97fa, -50-MEDICAÇÃO/PRESCRIÇÃO/RENOVAÇÃO/ INJ...,[Solicito + Exames + De],1
+Paciente ID: 002e02af64ba091ac6195afdf9de97fa,D20-SINAIS/SINTOMAS DA BOCA/LÍNGUA/LÁBIO...,[De + Dias + Prescrevo],1
+Paciente ID: 002e02af64ba091ac6195afdf9de97fa,D88-APENDICITE,[De + Dias + Prescrevo],1
+Paciente ID: 002e02af64ba091ac6195afdf9de97fa,N17-VERTIGENS/TONTURAS,[De + Dias + Prescrevo],1
+Paciente ID: 066e15e3956c7c54b87be41a5f7d42e2,D07-DISPEPSIA/INDIGESTÃO,[Solicito + Exames + De],1
+Paciente ID: 066e15e3956c7c54b87be41a5f7d42e2,D89-HÉRNIA INGUINAL,[Solicito + Exames + De],1
+Paciente ID: 066e15e3956c7c54b87be41a5f7d42e2,N01-CEFALÉIA,[Alarme + Sinais + De Alarme],1
+Paciente ID: 066e15e3956c7c54b87be41a5f7d42e2,T08-PERDA DE PESO,[Solicito + Exames + De],1
+Paciente ID: 0c0ed4c40cd4efba94d0baf480247018,CIAP Não Informado,[De + Dias + Prescrevo],1
+Paciente ID: 0c0ed4c40cd4efba94d0baf480247018,CIAP Não Informado,[Solicito + Exames + De],1
+Paciente ID: 0c0ed4c40cd4efba94d0baf480247018,U06-HEMATÚRIA,[De + Dias + Prescrevo],1
+Paciente ID: 0c0ed4c40cd4efba94d0baf480247018,U07-OUTROS SINAIS/SINTOMAS URINÁRIOS,[De + Dias + Prescrevo],1
+Paciente ID: 0c0ed4c40cd4efba94d0baf480247018,Y73-PROSTATITE/VESICULITE SEMINAL,[De + Dias + Prescrevo],1
+Paciente ID: 2bdd8383ab8ad0897c7cc1bc188192b6, -50-MEDICAÇÃO/PRESCRIÇÃO/RENOVAÇÃO/ INJ...,[De + Dias + Prescrevo],1
+Paciente ID: 2bdd8383ab8ad0897c7cc1bc188192b6,CIAP Não Informado,[De + Dias + Prescrevo],1
+Paciente ID: 2bdd8383ab8ad0897c7cc1bc188192b6,CIAP Não Informado,[Solicito + Exames + De],1
+Paciente ID: 2bdd8383ab8ad0897c7cc1bc188192b6,L02-SINAIS/SINTOMAS DA REGIÃO DORSAL,[De + Dias + Prescrevo],1
+Paciente ID: 2bdd8383ab8ad0897c7cc1bc188192b6,L03-SINAIS/SINTOMAS DA REGIÃO LOMBAR,[De + Dias + Prescrevo],1
+Paciente ID: 2bdd8383ab8ad0897c7cc1bc188192b6,R80-GRIPE,[Alarme + Sinais + De Alarme],1
+Paciente ID: 2bdd8383ab8ad0897c7cc1bc188192b6,W14-CONTRACEPÇÃO/OUTROS,[De + Dias + Prescrevo],1
+Paciente ID: 55d8b233471d1ad00ade225364e296af,A01-DOR GENERALIZADA /MÚLTIPLA,[De + Dias + Prescrevo],1
+Paciente ID: 55d8b233471d1ad00ade225364e296af,K07-TORNOZELOS INCHADOS/EDEMA,[De + Dias + Prescrevo],1
+Paciente ID: 55d8b233471d1ad00ade225364e296af,N17-VERTIGENS/TONTURAS,[Solicito + Exames + De],1
+Paciente ID: 55d8b233471d1ad00ade225364e296af,"R02-DIFICULDADE RESPIRATÓRIA, DISPNEIA",[De + Dias + Prescrevo],1
+Paciente ID: 8d6723c93fe64d014950a08f0d5f56eb,A04-DEBILIDADE/CANSAÇO GERAL/FADIGA,[Solicito + Exames + De],1
+Paciente ID: 8d6723c93fe64d014950a08f0d5f56eb,CIAP Não Informado,[Solicito + Exames + De],1
+Paciente ID: 8d6723c93fe64d014950a08f0d5f56eb,N01-CEFALÉIA,[De + Dias + Prescrevo],1
+Paciente ID: 8d6723c93fe64d014950a08f0d5f56eb,P03-TRISTEZA/ SENSAÇÃO DE DEPRESSÃO,[De + Dias + Prescrevo],1
+Paciente ID: 8d6723c93fe64d014950a08f0d5f56eb,P74-DISTÚRBIO ANSIOSO/ESTADO DE ANSIEDAD...,[De + Dias + Prescrevo],1
+Paciente ID: 8d6723c93fe64d014950a08f0d5f56eb,P76-PERTURBAÇÕES DEPRESSIVAS,[Solicito + Exames + De],1
+Paciente ID: bc6152f0469abc13d19b5436fe99bc83,K86-HIPERTENSÃO SEM COMPLICAÇÕES,[De + Dias + Prescrevo],1
+Paciente ID: bc6152f0469abc13d19b5436fe99bc83,N88-EPILEPSIA,[De + Dias + Prescrevo],1
+Paciente ID: bc6152f0469abc13d19b5436fe99bc83,T89-DIABETES INSULINO-DEPENDENTE,[Solicito + Exames + De],1
+Paciente ID: e0df43fbeac7271f0f3b4cfaf4ac2cfb,CIAP Não Informado,[De + Dias + Prescrevo],1
+Paciente ID: e0df43fbeac7271f0f3b4cfaf4ac2cfb,L02-SINAIS/SINTOMAS DA REGIÃO DORSAL,[Alarme + Sinais + De Alarme],1
+Paciente ID: e0df43fbeac7271f0f3b4cfaf4ac2cfb,P03-TRISTEZA/ SENSAÇÃO DE DEPRESSÃO,[De + Dias + Prescrevo],1
+Paciente ID: e0df43fbeac7271f0f3b4cfaf4ac2cfb,T87-HIPOGLICEMIA,[Alarme + Sinais + De Alarme],1
+Paciente ID: e0df43fbeac7271f0f3b4cfaf4ac2cfb,T89-DIABETES INSULINO-DEPENDENTE,[De + Dias + Prescrevo],1
+Paciente ID: e7643fc988e575f0ecb93f2acd7bd708,H01-DOR DE OUVIDOS,[De + Dias + Prescrevo],1
