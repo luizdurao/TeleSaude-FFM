@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Detail | Data System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <style>
+        /* Shared expansion styles for Prompt and Code */
+        .expand-wrapper { position: relative; background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; }
+        .expand-content { padding: 20px; max-height: 120px; overflow: hidden; transition: max-height 0.5s ease; }
+        .expand-content.expanded { max-height: none; }
+        
+        .show-more-bar {
+            width: 100%; border: none; background: #fff; border-top: 1px solid #e0e0e0;
+            padding: 12px; color: #1a73e8; cursor: pointer; font-weight: 600; font-family: inherit;
+        }
+        .show-more-bar:hover { background: #f1f3f4; }
+
+        /* Specific text styling for the prompt */
+        #q-prompt { color: #5f6368; line-height: 1.6; margin: 0; font-size: 0.95rem; white-space: pre-wrap; }
+
+        pre[class*="language-"] { margin: 0; background: transparent; padding: 0; }
+        .image-gallery { display: flex; flex-direction: column; gap: 24px; margin-top: 20px; }
+        .analysis-img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" style="text-decoration:none; color:#5f6368; font-size:0.9rem; font-weight:500;">← Back to Dashboard</a>
+        </div>
+        <nav class="nav-list" id="side-nav">
+            </nav>
+    </aside>
+
+    <main class="main">
+        <div class="container">
+            
+            <div class="card">
+                <span class="section-label" id="module-tag">Question...</span>
+                <h2 id="q-text">Loading analysis...</h2>
+            </div>
+
+            <div class="card">
+                <span class="section-label">Strategic Prompt</span>
+                <div class="expand-wrapper">
+                    <div id="prompt-wrapper" class="expand-content">
+                        <p id="q-prompt"></p>
+                    </div>
+                    <button class="show-more-bar" id="prompt-btn" onclick="toggleSection('prompt')">Show Full Prompt ↓</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="section-label">Notebook Source (.ipynb)</span>
+                <div class="expand-wrapper">
+                    <div id="code-wrapper" class="expand-content">
+                        <pre><code class="language-python" id="code-display"># Fetching notebook cells...</code></pre>
+                    </div>
+                    <button class="show-more-bar" id="code-btn" onclick="toggleSection('code')">Show Full Code ↓</button>
+                </div>
+                <div style="margin-top:15px; display:flex; justify-content:flex-end;">
+                    <a id="q-download" href="#" style="color:#1a73e8; text-decoration:none; font-size:0.85rem; font-weight:500;">Download Notebook 💾</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="section-label">Visual Results Gallery</span>
+                <div id="image-gallery" class="image-gallery"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = parseInt(params.get('id')) || 1;
+        const states = { prompt: false, code: false };
+
+        async function initPage() {
+            try {
+                const response = await fetch('data/questions.json');
+                const data = await response.json();
+                
+                const nav = document.getElementById('side-nav');
+                data.forEach(q => {
+                    const activeClass = q.id === id ? 'active' : '';
+                    nav.innerHTML += `<a href="question.html?id=${q.id}" class="nav-item ${activeClass}">Q${q.id}: ${q.question.substring(0, 40)}...</a>`;
+                });
+
+                const current = data.find(q => q.id === id);
+                if (current) {
+                    document.getElementById('module-tag').innerText = `Question ${id}`;
+                    document.getElementById('q-text').innerText = current.question;
+                    document.getElementById('q-prompt').innerText = current.prompt;
+                    document.getElementById('q-download').href = `codes/q${id}.ipynb`;
+                    
+                    fetchNotebook();
+                    loadAllImagesSequential(id);
+                }
+            } catch (err) {
+                console.error("Initialization failed:", err);
+            }
+        }
+
+        async function loadAllImagesSequential(questionId) {
+            const gallery = document.getElementById('image-gallery');
+            for (let i = 1; i <= 10; i++) {
+                const path = `img/q${questionId}/chart${i}.png`;
+                const img = new Image();
+                img.onload = () => {
+                    const el = document.createElement('img');
+                    el.src = path;
+                    el.className = 'analysis-img';
+                    gallery.appendChild(el);
+                };
+                img.src = path;
+            }
+        }
+
+        async function fetchNotebook() {
+            const display = document.getElementById('code-display');
+            try {
+                const response = await fetch(`codes/q${id}.ipynb`);
+                const nb = await response.json();
+                const codeLines = nb.cells
+                    .filter(cell => cell.cell_type === 'code')
+                    .map(cell => cell.source.join(''))
+                    .join('\n\n# --- NEXT CELL ---\n\n');
+
+                display.textContent = codeLines || "# No code cells found.";
+                Prism.highlightElement(display);
+            } catch (err) {
+                display.textContent = `# Error loading notebook: ${err.message}`;
+            }
+        }
+
+        // Generic Toggle Function for both Prompt and Code
+        function toggleSection(type) {
+            const wrapper = document.getElementById(`${type}-wrapper`);
+            const btn = document.getElementById(`${type}-btn`);
+            states[type] = !states[type];
+            
+            if (states[type]) {
+                wrapper.classList.add('expanded');
+                btn.innerText = type === 'prompt' ? "Show Less ↑" : "Show Less ↑";
+            } else {
+                wrapper.classList.remove('expanded');
+                btn.innerText = type === 'prompt' ? "Show Full Prompt ↓" : "Show Full Code ↓";
+            }
+        }
+
+        initPage();
+    </script>
+</body>
+</html>

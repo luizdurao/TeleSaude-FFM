@@ -1,0 +1,86 @@
+:root {
+    --bg-main: #f0f2f5; /* Light grey background to make cards pop */
+    --bg-sidebar: #ffffff;
+    --bg-card: #ffffff;
+    --accent: #1a73e8;
+    --text-primary: #1f1f1f;
+    --text-secondary: #5f6368;
+    --border: #e0e0e0;
+    --code-bg: #f8f9fa;
+    --shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: var(--bg-main);
+    color: var(--text-primary);
+    margin: 0; display: flex; height: 100vh;
+}
+
+/* Sidebar: Refined list with "pill" selection */
+.sidebar {
+    width: 320px; background: var(--bg-sidebar); 
+    border-right: 1px solid var(--border); display: flex; flex-direction: column;
+}
+.sidebar-header { padding: 25px; border-bottom: 1px solid var(--border); }
+.nav-list { flex: 1; overflow-y: auto; padding: 15px; }
+.nav-item { 
+    display: block; padding: 12px 20px; color: var(--text-secondary); 
+    text-decoration: none; border-radius: 8px; font-size: 0.88rem; margin-bottom: 4px;
+    line-height: 1.4; transition: all 0.2s;
+}
+.nav-item:hover { background: #f1f3f4; color: var(--text-primary); }
+.nav-item.active { 
+    background: #e8f0fe; color: var(--accent); font-weight: 500; 
+    box-shadow: inset 4px 0 0 var(--accent); /* Subtle indicator */
+}
+
+/* Main Content: Card-based layout */
+.main { flex: 1; overflow-y: auto; padding: 40px 20px; }
+.container { max-width: 850px; margin: 0 auto; }
+
+.card {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+
+h2 { font-size: 1.75rem; font-weight: 400; margin: 0 0 10px 0; line-height: 1.3; }
+
+.section-label {
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* Code Block: Cleaner "Show More" interaction */
+.code-section { 
+    background: var(--code-bg); 
+    border-radius: 8px; 
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+#code-display {
+    padding: 20px; font-family: 'Cascadia Code', 'Fira Code', monospace;
+    font-size: 0.9rem; color: #3c4043; line-height: 1.5;
+    max-height: 200px; transition: max-height 0.4s ease;
+}
+#code-display.expanded { max-height: none; }
+
+.show-more-bar {
+    width: 100%; border: none; padding: 12px;
+    background: white; border-top: 1px solid var(--border);
+    color: var(--accent); cursor: pointer; font-weight: 600;
+    transition: background 0.2s;
+}
+.show-more-bar:hover { background: #f8f9fa; }
+
+.result-img { width: 100%; border-radius: 8px; border: 1px solid var(--border); margin-top: 15px; }

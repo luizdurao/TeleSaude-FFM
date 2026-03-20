@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis Portal | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific Home Page Enhancements */
+        .hero {
+            padding: 60px 0 40px 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            color: var(--accent);
+            margin: 0;
+            letter-spacing: -1px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+        
+        /* The 15-Question Grid */
+        .question-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding-bottom: 60px;
+        }
+        
+        .module-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            box-shadow: var(--shadow);
+        }
+        
+        .module-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            border-color: var(--accent);
+        }
+        
+        .module-number {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        
+        .module-title {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5;
+            color: var(--text-primary);
+            margin: 0;
+            flex-grow: 1;
+        }
+        
+        .module-footer {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <span style="font-weight: 700; color: var(--accent); letter-spacing: 1px;">✦ DATA SYSTEM</span>
+        </div>
+        <nav class="nav-list" id="side-nav">
+            </nav>
+    </aside>
+
+    <main class="main">
+        <div class="container">
+            
+            <header class="hero">
+                <h1>Analysis <br><strong>Portal</strong></h1>
+                <p>
+                    Welcome to the specialized data analysis system. Below are the 15 research modules 
+                    covering clinical journeys, operational metrics, and epidemiological trends.
+                </p>
+            </header>
+
+            <section class="question-grid" id="question-grid">
+                </section>
+
+        </div>
+    </main>
+
+    <script>
+        async function loadDashboard() {
+            try {
+                const response = await fetch('data/questions.json');
+                const data = await response.json();
+                
+                const grid = document.getElementById('question-grid');
+                const nav = document.getElementById('side-nav');
+
+                data.forEach(q => {
+                    const url = `question.html?id=${q.id}`;
+                    
+                    // 1. Add to Sidebar
+                    nav.innerHTML += `
+                        <a href="${url}" class="nav-item">
+                            Q${q.id}: ${q.question.substring(0, 30)}...
+                        </a>
+                    `;
+
+                    // 2. Add to Grid
+                    grid.innerHTML += `
+                        <a href="${url}" class="module-card">
+                            <div class="module-number">Question ${q.id}</div>
+                            <h3 class="module-title">${q.question}</h3>
+                            <div class="module-footer">View Analysis →</div>
+                        </a>
+                    `;
+                });
+            } catch (err) {
+                console.error("Failed to load questions:", err);
+                document.getElementById('question-grid').innerHTML = `
+                    <p style="color:red;">Error loading data. Ensure data/questions.json exists.</p>
+                `;
+            }
+        }
+
+        loadDashboard();
+    </script>
+</body>
+</html>
